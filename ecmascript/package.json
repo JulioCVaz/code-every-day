@@ -1,0 +1,10 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/preset-env": "^7.2.3"
+  }
+}
