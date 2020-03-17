@@ -50,14 +50,11 @@
     </table>
     <script src="js/app/models/Negociacao.js"></script>
     <script>
-        const n1 = new Negociacao();
-        n1.quantidade = 10;
-        console.log(n1);
-
-        const n2 = new Negociacao();
-        n2.quantidade = 20;
-        console.log(n2);
-        
+        const n1 = new Negociacao(new Date, 5, 700);
+        console.log(n1.volume);
+        console.log(n1.data);
+        console.log(n1.quantidade);
+        console.log(n1.valor);
     </script>
 </body>
 </html>
