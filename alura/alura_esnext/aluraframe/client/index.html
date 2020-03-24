@@ -9,6 +9,7 @@
 </head>
 <body class="container">
     <h1 class="text-center">Negociações</h1>
+    <div id="mensagemView"></div>
     <form class="form" onsubmit="negociacaoController.adiciona(event)">
         <div class="form-group">
             <label for="data">Data</label>
@@ -38,10 +39,13 @@
     <!-- models-->
     <script src="js/app/models/Negociacao.js"></script>
     <script src="js/app/models/ListaNegociacoes.js"></script>
+    <script src="js/app/models/Mensagem.js"></script>
     <!-- controllers-->
     <script src="js/app/controllers/NegociacaoController.js"></script>
     <!-- views -->
+    <script src="js/app/views/View.js"></script>
     <script src="js/app/views/NegociacoesView.js"></script>
+    <script src="js/app/views/MensagemView.js"></script>
     <!-- helpers-->
     <script src="js/app/helpers/DateHelper.js"></script>
     <script>

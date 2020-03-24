@@ -1,9 +1,15 @@
-class NegociacoesView {
+class NegociacoesView extends View{
+    // artigo: Herança x Composicao = https://blog.caelum.com.br/como-nao-aprender-orientacao-a-objetos-heranca/
+
+
+    // posso remover o contructor porque ele é um espelho do constructor da super class
+    // caso eu tivesse um novo parametro, eu poderia adiciona-lo após o super sem reescrever os parametros do constructor da super classe
     constructor(elemento){
-        this._elemento = elemento;
+        super(elemento);
+        // this._novoparametro = novoparametro;
     }
 
-    _template = (modelo) => `
+    template = (modelo) => `
         <table class="table table-hover table-bordered">
             <thead>
                 <tr>
@@ -33,6 +39,4 @@ class NegociacoesView {
             </tfoot>
         </table>
     `
-
-    update = (modelo) => this._elemento.innerHTML = this._template(modelo);
 }
