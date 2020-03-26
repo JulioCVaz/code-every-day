@@ -38,5 +38,5 @@ class NegociacoesView extends View{
                 </td>
             </tfoot>
         </table>
-    `
+    `;
 }
